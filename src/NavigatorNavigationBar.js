@@ -200,6 +200,7 @@ class NavigatorNavigationBar extends React.Component {
         ref={(ref) => {
           this._components[componentName] = this._components[componentName].set(route, ref);
         }}
+        key={componentName}
         pointerEvents={componentIsActive ? 'box-none' : 'none'}
         style={initialStage[componentName]}>
         {content}
